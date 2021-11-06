@@ -18,7 +18,7 @@ impl Output {
     }
 
     pub async fn run(&mut self) {
-        let mut option: Option<File>;
+        let mut output: Option<File>;
         match &self.outfile {
             None => {
                 output = None
@@ -40,6 +40,8 @@ impl Output {
                             println!("{}", r);
                             let r = format!("{} \n", r);
                             output.as_mut().unwrap().write_all(r.as_bytes()).await.unwrap();
+                            output.as_mut().unwrap().flush().await.unwrap();
+
                         }
                     }
                 }
