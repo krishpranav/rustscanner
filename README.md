@@ -2,6 +2,8 @@
 A simple port scanner built using rust-lang
 
 
+[![forthebadge](https://forthebadge.com/images/badges/made-with-rust.svg)](https://forthebadge.com)
+
 ## Building:
 ```
 cargo build
