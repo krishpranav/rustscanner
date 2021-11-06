@@ -30,3 +30,6 @@ OPTIONS:
     -t, --timeout <timeout>            Timeout  Milliseconds [default: 800]
 
 ```
+
+### Example:
+```./rustscanner -i 127.0.0.1 -p1-65535```
